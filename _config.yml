@@ -5,7 +5,7 @@ paginate: 100 # it will paginate after this number
 language: 'zh-cn'
 
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: /
+baseurl: /loren1994.github.io/
 
 # Website info
 title: Loren
