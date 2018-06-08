@@ -5,7 +5,7 @@ cover:  assets/images/welcome.jpg
 navigation: True
 title: Android自定义控件系列之：锁屏页
 date: 2017-10-27 12:47:00
-tags: [Getting started]
+tags: [blog]
 class: post-template
 subclass: 'post tag-getting-started'
 author: loren1994
