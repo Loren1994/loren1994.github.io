@@ -14,6 +14,7 @@ picture: assets/images/ghost.png
 
 ## Android自定义控件系列之：锁屏页
 
+<!-- more -->
 #### 介绍
 
 * 翻阅以前写过的demo，发现在1.52225年前撸过一个仿锁屏功能的自定义View，特此记录。

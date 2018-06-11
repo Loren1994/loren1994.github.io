@@ -24,6 +24,8 @@ picture: assets/images/ghost.png
 * 解决三方库之间FileProvider冲突问题
 * 支持Android8.0
 
+<!-- more -->
+
 ## 引用
 
 ```Java
