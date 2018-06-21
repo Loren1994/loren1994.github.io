@@ -1,39 +1,56 @@
 ---
 layout: default
-current: home
-class: 'home-template'
-navigation: True
 ---
 
-<!-- < default -->
-<!-- The tag above means: insert everything in this file
-into the {body} of the default.hbs template -->
+<div class="home container">
 
-<!-- The big featured header, it uses blog cover image as a BG if available -->
-<header class="site-header outer {% if page.cover or site.cover %}" style="background-image:  url({{ site.baseurl }}{% if page.cover %}{{ page.cover }}{% elsif site.cover %}{{ site.cover }}{% endif %}) {% else %}no-cover{% endif %}">
-    <div class="inner">
-        <div class="site-header-content">
-            <h1 class="site-title">
-                {% if site.logo %}
-                    <img class="site-logo" src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}"/>
-                {% else %}
-                    {{ site.title }}
-                {% endif %}
-            </h1>
-            <h2 class="site-description">{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}</h2>
+  <div class="page-heading">
+    <ul class="collapsible popout" data-collapsible="accordion">
+      <li>
+        <div class="collapsible-header favo"><i class="mdi mdi-weather-windy-variant"></i>{{ site.favo }}<i class="mdi mdi-pin right pink-text hide-on-small-only"></i></div>
+        <div class="collapsible-body"><p>{{ site.descrpt }}</p></div>
+      </li>
+    </ul>
+  </div>
+
+  <ul class="post-list">
+    <!-- This loops through the paginated posts -->
+    {% for post in paginator.posts %}
+      <li class="card-panel hoverable">
+        <span class="grey-text right">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+
+        <button data-target="{{ post.id | remove: '%' | replace: '/', '_' }}" class="waves-effect waves-light btn modal-trigger" style="padding: 0 1.2rem;">overview<i class="mdi mdi-send right"></i></button>
+
+        <div id="{{ post.id | remove: '%' | replace: '/', '_' }}" class="modal modal-fixed-footer">
+          <div class="modal-content">
+            <h4>{{ post.title }}</h4>
+            <p>{{ post.excerpt }}</p>
+          </div>
+          <div class="modal-footer">
+            <a href="{{ post.url | prepend: site.baseurl }}" class="waves-effect btn-flat grey-text text-darken-4 right">read more</a>
+            <a class="modal-action modal-close waves-effect btn-flat grey-text text-darken-4 left">close</a>
+          </div>
         </div>
-        {% include site-nav.html %}
-    </div>
-</header>
+      </li>
+    {% endfor %}
+  </ul>
 
-<!-- The main content area -->
-<main id="site-main" class="site-main outer" role="main">
-    <div class="inner">
+  <!-- Pagination links -->
+  <div class="pagination">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="waves-effect waves-light btn cyan left"><i class="mdi mdi-chevron-left white-text"></i></a>
+    {% else %}
+    <span class="btn disabled left"><i class="mdi mdi-chevron-left white-text"></i></span>
+    {% endif %}
 
-        <div class="post-feed">
-            <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
-            {%  include post-card.html %}
-        </div>
+    <div class="waves-effect btn-flat lower-case page">Page: <span class="pink-text">{{ paginator.page }}</span> of {{ paginator.total_pages }}</div>
 
-    </div>
-</main>
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="waves-effect waves-light btn cyan right"><i class="mdi mdi-chevron-right white-text"></i></a>
+    {% else %}
+    <span class="btn disabled right"><i class="mdi mdi-chevron-right white-text"></i></a></li>
+    {% endif %}
+  </div>
+
+</div>

@@ -1,0 +1,48 @@
+<div class="nav-wrapper">
+    <img style="width: 3%;margin-right: 10px;margin-left: 20px;margin-bottom: 10px" src="/blog/assets/images/blog-icon.png" />
+    <span class="site-title">{{ site.title }}</span>
+    <a href="#" data-activates="mobile-navbar" class="button-collapse">
+        <i class="mdi mdi-menu white-text"></i>
+    </a>
+
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li>
+            <a href="{{ '/' | prepend: site.baseurl }}" class="white-text">
+                <i class="mdi mdi-home left indigo-text text-lighten-3"></i>主页
+            </a>
+        </li>
+        <li>
+            <a href="{{ '/category' | prepend: site.baseurl }}" class="white-text">
+                <i class="mdi mdi-folder-multiple left indigo-text text-lighten-3"></i>类别
+            </a>
+        </li>
+        <li>
+            <a href="{{ '/about' | prepend: site.baseurl }}" class="white-text">
+                <i class="mdi mdi-account-circle left indigo-text text-lighten-3"></i>关于
+            </a>
+        </li>
+        <!-- <li><a href="{{ '/feed.xml' | prepend: site.baseurl }}" class="white-text">
+            <i class="mdi mdi-rss left indigo-text text-lighten-3"></i>RSS
+        </a></li> -->
+    </ul>
+    <ul class="side-nav" id="mobile-navbar">
+        <li>
+            <a href="{{ '/' | prepend: site.baseurl }}" class="waves-effect waves-teal black-text">
+                <i class="mdi mdi-home left green-text"></i>主页
+            </a>
+        </li>
+        <li>
+            <a href="{{ '/category' | prepend: site.baseurl }}" class="waves-effect waves-teal black-text">
+                <i class="mdi mdi-folder-multiple left yellow-text text-darken-1"></i>类别
+            </a>
+        </li>
+        <li>
+            <a href="{{ '/about' | prepend: site.baseurl }}" class="waves-effect waves-teal black-text">
+                <i class="mdi mdi-account-circle left blue-text"></i>关于
+            </a>
+        </li>
+        <!-- <li><a href="{{ '/feed.xml' | prepend: site.baseurl }}" class="waves-effect waves-teal black-text">
+            <i class="mdi mdi-rss left red-text"></i>RSS
+        </a></li> -->
+    </ul>
+</div>

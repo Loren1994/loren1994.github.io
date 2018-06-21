@@ -1,18 +1,13 @@
 ---
 layout: post
-current: post
-cover:  assets/images/grapes.jpg
-navigation: True
 title: 一款简洁小巧的App升级库介绍
-date: 2017-10-27 12:47:00
-tags: [blog]
-class: post-template
-subclass: 'post tag-getting-started'
+date: 2018-06-11
+tags: [android,update]
 author: loren1994
-picture: assets/images/ghost.png
+category: blog
 ---
 
-# AppUpdate
+#### AppUpdate
 
 你可以通过它来升级你的App
 

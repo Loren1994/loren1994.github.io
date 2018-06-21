@@ -1,18 +1,13 @@
 ---
 layout: post
-current: post
-cover:  assets/images/welcome.jpg
-navigation: True
 title: Android自定义控件系列之：锁屏页
-date: 2017-10-27 12:47:00
-tags: [blog]
-class: post-template
-subclass: 'post tag-getting-started'
+date: 2018-06-07
+tags: [android,锁屏]
 author: loren1994
-picture: assets/images/ghost.png
+category: blog
 ---
 
-## Android自定义控件系列之：锁屏页
+##### Android自定义控件系列之：锁屏页
 
 <!-- more -->
 #### 介绍
@@ -164,7 +159,7 @@ private void checkPassword() {
 
 #### 最终效果
 
-![1903537-5e53408ab2f0cd3d](assets/images/1903537-5e53408ab2f0cd3d.png)
+![1903537-5e53408ab2f0cd3d](/blog/assets/images/1903537-5e53408ab2f0cd3d.png)
 
 > 最后祝看过的人进步～
 

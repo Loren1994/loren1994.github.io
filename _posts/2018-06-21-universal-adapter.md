@@ -1,26 +1,21 @@
 ---
 layout: post
-current: post
-cover:  assets/images/bear.jpg
-navigation: True
 title: 带分类标题的RecyclerViewAdapter的通用封装实现
 date: 2018-06-20 10:06:00
-tags: [blog]
-class: post-template
-subclass: 'post tag-getting-started'
+tags: [android,recyclerview]
 author: loren1994
-picture: assets/images/ghost.png
+category: blog
 ---
 
-# UniversalAdapter
+##### UniversalAdapter
 这是封装的带分类Recyclerview的Adapter，主要解决项目中分类列表繁琐的重复劳动。
-<!-- more -->
 
 * 不影响Recyclerview或其他封装的上拉下拉Recyclerview的正常使用
 * 只需写一个继承UniversalAdapter的adapter
 * 支持分类和子项部分的自定义布局
 * 数据类需实现OnTypeList接口
 
+<!-- more -->
 #####  数据结构JSON示例
 
 ~~~~json
@@ -50,15 +45,15 @@ picture: assets/images/ghost.png
 
 * 竖向多列
 
-![multicolumn](assets/images/multicolumn.jpg)
+![multicolumn](/blog/assets/images/multicolumn.jpg)
 
 * 竖向单列
 
-![singlecolum](assets/images/singlecolum.jpg)
+![singlecolum](/blog/assets/images/singlecolum.jpg)
 
 * 横向多列
 
-![horizontal](assets/images/horizontal.jpg)
+![horizontal](/blog/assets/images/horizontal.jpg)
 
 #### 基本思路 
 

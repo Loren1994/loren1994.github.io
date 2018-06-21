@@ -1,94 +1,67 @@
-# Jekyll configuration
+# Site settings
+
+author: Loren
+email: cooloren@163.com
+github_username:  Loren1994
+# twitter_username: twitter
+# googleplus_username: google
+
+head-title: Loren's blog
+title: 一些微小的工作
+
+baseurl: "/blog"    # the subpath of your site, "/blog"
+url: ""
+
+# footer 
+description: "It is better to be a head of dog than a tail of a lion."
+
+favo: "路漫漫其修远兮 吾将上下而求索"
+descrpt: "ᕦ(･ㅂ･)ᕤ"
+
+
+#
+# Build settings
+#
+
+#exclude: [vendor]
+
 markdown: kramdown
 highlighter: rouge
-paginate: 100 # it will paginate after this number
-language: 'zh-cn'
-excerpt_separator:  '<!-- more -->'
 
-# edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: /loren1994.github.io/
+kramdown:
+  input: GFM
+  hard_wrap: false
+  highlight: true
+  auto_ids:  true
 
-# Website info
-title: Loren
-description: 一些微小的工作
-cover: assets/images/blog-cover.jpg
-logo: assets/images/blog-icon.png
-logo_dark: assets/images/favicon.png
-favicon: assets/images/favicon.png
-production_url: https://loren1994.github.io
-source_url: https://github.com/Loren1994/loren1994.github.io
+sass:
+  style: compressed
 
-# Social info
-navigation: False # show the navbar links
-subscribers: False # you need to connect an external service for this to work,
-# if 'True' the submit button is disabled for now, but you can change that
-# by editing `_includes/subscribe-form.html`
-# twitter: loren # replace by your username
-# facebook: loren # replace by your username
+permalink: /posts/:categories/:title.html
 
-# Disqus
-disqus: False
-disqus_shortname: loren # replace with your disqus username
+paginate: 7
+#paginate_path: 'page/:num'
 
-# Google Analytics
-google_analytics: UA-69281367-1 # replace with your GA tracking identifier
+gems: [jekyll-paginate, jekyll-last-modified-at, jemoji]
 
-# Permalinks
-permalink: /:title
-# permalink: /author/:author
-# permalink: /tag/:tag
 
-# Authors' info in `_data/authors.yml`
-# Tags' info in `_data/tags_info.yml`
+#
+# Custom
+#
 
-# gems and other configs
-plugins: [jekyll-paginate, jekyll-feed]
+# Color
+# All css class, see: http://materializecss.com/color.html
+header-color: "indigo lighten-1"
+head-theme-color: "#5c6bc0"     # MUST in hex format, may the same as header-color. This color is for android chrome browser.
 
-feed:
-  path: feed.xml
+footer-color: "indigo lighten-1"
+footer-button-color: "indigo lighten-2"
+footer-link-color: "red-text text-accent-1"
 
-# Additional settings available on the front-matter
-# Site logo in the index.html (as in demo.ghost.io)
-# Author's page cover in _layouts/author.html
-# The same for page.html and tag.html layouts
-# Post's page cover as a per-post basis _posts/...
-# Disqus comments as a per-post basis
-# ...
+share-button-color: "pink"
+share-button-small-color: ""
 
-# Settings for builing master branch with travis-ci
-# with jekyll-travis
 
-# Settings for deploy rake task
-# Username and repo of Github repo, e.g.
-# https://github.com/USERNAME/REPO.git
-# username defaults to ENV['GIT_NAME'] used by Travis
-# repo defaults to USERNAME.github.io
-# Branch defaults to "source" for USERNAME.github.io
-# or "master" otherwise
-safe: False
-lsi: False
-username: loren1994
-repo: loren1994.github.io
-branch: master
-relative_source: ../loren1994.github.io/
-destination: ../loren1994.github.io-pages/
-production_url: https://loren1994.github.io
-source_url: https://github.com/Loren1994/loren1994.github.io
+##
+#excerpt_separator: <!-- excerpt_end -->       # for post.excerpt
 
-exclude:
-  - assets/css
-  - node_modules
-  - vendor
-  - .travis.yml
-  - Gemfile
-  - Gemfile.lock
-  - GHOST.txt
-  - gulpfile.js
-  - LICENSE
-  - package.json
-  - Rakefile
-  - README.md
-  - script.py
-  - changelog.md
-  - "*.Rmd"
-  - .git*
