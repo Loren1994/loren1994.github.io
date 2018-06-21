@@ -45,15 +45,15 @@ category: blog
 
 * 竖向多列
 
-![multicolumn](/blog/assets/images/multicolumn.jpg)
+![multicolumn]({{site.baseurl}}/assets/images/multicolumn.jpg)
 
 * 竖向单列
 
-![singlecolum](/blog/assets/images/singlecolum.jpg)
+![singlecolum]({{site.baseurl}}/assets/images/singlecolum.jpg)
 
 * 横向多列
 
-![horizontal](/blog/assets/images/horizontal.jpg)
+![horizontal]({{site.baseurl}}/assets/images/horizontal.jpg)
 
 #### 基本思路 
 

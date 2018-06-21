@@ -1,7 +1,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
   <meta name="theme-color" content="{{ site.head-theme-color }}">
 
   <link rel="shortcut icon" href="{{ '/favicon.ico' | prepend: site.baseurl | prepend: site.url }}">
@@ -10,10 +10,8 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <!-- <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" /> -->
 
-  <link rel="stylesheet" href="/blog/lib/materialize/css/materialize.min.css">
-  <link rel="stylesheet" href="/blog/css/main.css">
-  <link media="all" rel="stylesheet" type="text/css" href="/blog/lib/mdi/css/materialdesignicons.min.css" >
-  <link rel="stylesheet" href="/blog/lib/material-scrolltop/material-scrolltop.css">
-
-  {% include check.html %}
+  <link rel="stylesheet" href="{{site.baseurl}}/lib/materialize/css/materialize.min.css">
+  <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
+  <link media="all" rel="stylesheet" type="text/css" href="{{site.baseurl}}/lib/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="{{site.baseurl}}/lib/material-scrolltop/material-scrolltop.css"> {% include check.html %}
 </head>

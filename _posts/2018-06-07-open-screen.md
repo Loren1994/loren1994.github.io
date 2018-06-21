@@ -159,7 +159,7 @@ private void checkPassword() {
 
 #### 最终效果
 
-![1903537-5e53408ab2f0cd3d](/blog/assets/images/1903537-5e53408ab2f0cd3d.png)
+![1903537-5e53408ab2f0cd3d]({{site.baseurl}}/assets/images/1903537-5e53408ab2f0cd3d.png)
 
 > 最后祝看过的人进步～
 
