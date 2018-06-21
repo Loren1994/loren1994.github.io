@@ -10,7 +10,7 @@ head-title: Loren's blog
 title: 一些微小的工作
 
 baseurl: "/blog"    # the subpath of your site, "/blog"
-url: ""
+url: "/blog"
 
 # footer 
 description: "It is better to be a head of dog than a tail of a lion."
