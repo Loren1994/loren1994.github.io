@@ -13,7 +13,7 @@ category: blog
 
 ##### 常见网络请求库如下:
 
-* [$\color{red}{Dio}$](https://github.com/flutterchina/dio)
+* [Dio](https://github.com/flutterchina/dio)
 
 * 自带HttpClient
 * 三方库Http
