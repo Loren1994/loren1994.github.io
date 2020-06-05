@@ -138,9 +138,9 @@ printf("the sum is %d\n",sum);
 
 而sum的值就存在eax寄存器里。
 
-> eax 是"累加器"(accumulator)，它是很多加法乘法指令的缺省寄存器。
+> eax 是累加器(accumulator)，它是很多加法乘法指令的缺省寄存器。
 >
-> ebx 是"基地址"(base)*寄存器*，在内存寻址时存放基地址。
+> ebx 是基地址(base)*寄存器*，在内存寻址时存放基地址。
 >
 > ecx 是计数器(counter)，是重复(REP)前缀指令和LOOP指令的内定计数器。
 >
