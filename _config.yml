@@ -9,7 +9,7 @@ github_username:  Loren1994
 head-title: Loren's blog
 title: 一些微小的工作
 
-baseurl: "/loren1994"    # the subpath of your site, "/blog"
+baseurl: "/loren1994.github.io"    # the subpath of your site, "/blog"
 url: ""
 
 # footer 
